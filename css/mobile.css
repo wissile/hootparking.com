@@ -1,0 +1,516 @@
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", "Helvetica Neue", "Helvetica";
+    font-weight: 100;
+    color: #444444;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.wow {
+
+}
+
+#leftfeat {
+    float: right;
+}
+
+
+.orange {
+background-color: #f7931e;/*3e4760*/
+    padding: 1px 50px;
+    margin: 0;
+    clear: both;
+}
+
+
+
+.point {
+    width: 15px;
+    height: 15px;
+    background-color: #f15a24;
+    border-radius: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.white {
+background-color: #fff;
+    margin: 0px 0px;
+    padding: 100px 50px;
+    border-bottom: 1px solid #eee;
+    clear: both;
+}
+
+.footer {
+    background-color: #f15a24;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.white h2 {
+    color: #f15a24;
+}
+
+.title h2 {
+    color: #f15a24;
+    margin: 0px 0px 10px 0px;
+}
+
+.title {
+    max-width: 700px;
+    margin: 0px auto 60px auto;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+#inspiration-text {
+    max-width: 350px;
+    margin: 140px 0px 0px 60px;
+    padding: 40px;
+    background-color: rgba(255,255,255,1);
+    font-size: 14px;
+    font-weight: 400;
+    color: #808080;
+}
+
+
+
+#inspiration-text h6 {
+    margin: 15px 0px 3px 0px;
+    font-size: 16px;
+}
+
+.title h2 {
+    font-size: 45px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+#logo {
+    margin: 50px 0px;
+}
+
+#logo img {
+display: inline-block;
+
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+#logo span {
+    color#f15a24;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 38px;
+    color: #ffffff;
+}
+
+#logo strong {
+    font-weight: 400;
+}
+
+.features {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.features.rediscover {
+    text-align: center;
+}
+
+.features > li {
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+}
+
+.feature-list.left {
+    text-align: right;
+}
+
+.feature-list {
+    max-width: 230px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.feature-list ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#platforms {
+    max-width: 600px;
+    margin: 0px auto 40px auto;
+    text-align: center;
+}
+
+#platforms li {
+    display: inline-block;
+    margin: 0px 40px;
+    vertical-align: top;
+}
+
+#platforms li:last-child {
+    margin-left: 15px;
+}
+
+.feature-list ul li {
+    list-style-type: none;
+    margin: 60px 0px;
+}
+
+
+.feature-list h6 {
+    font-weight: 100;
+    font-size: 22px;
+    color:#;
+    margin: 0px 0px 5px 0px;
+}
+
+.appstore {
+    margin-top: 50px;
+}
+
+#create-user:focus {
+    outline: none;
+}
+
+#create-user a {
+    width: 138px;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    border: 1px solid #fdddb7;
+    color: #fdddb7;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#create-user a:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.text {
+    max-width: 400px;
+    font-size: 30px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.text.down {
+    margin-top: 90px;
+}
+
+.text #white-text {
+    color: #ffffff;
+}
+
+
+input {
+    border: none;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+
+#signupform {
+    width: 300px;
+}
+
+#fname {
+    width: 48.5%;
+    display: inline-block;
+}
+
+#lname {
+    width: 48.5%;
+    display: inline-block;
+}
+
+.signupfield {
+    width: 99.5%;
+    padding: 8px 0px;
+    font-size: 14px;
+    margin: 0;
+    background-color: transparent;
+    color: #ffffff;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #fbcb93;
+}
+
+#signupbutton {
+    padding: 10px 20px;
+    width: 100%;
+    margin: 20px auto 0px auto;
+    background-color: transparent;
+    border: 1px solid #fbcb93;
+    color: #fbcb93;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    font-family: "Roboto", "Helvetica Neue", "Helvetica";
+    font-weight: 100;
+    cursor: pointer;
+}
+
+#signupbutton:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: rgba(255,255,255,0.1);
+}
+
+::-webkit-input-placeholder {
+    color: #fbcb93;
+    letter-spacing: 1px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #faba6f;
+    letter-spacing: 1px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+:-ms-input-placeholder {
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+
+.text h2 {
+    font-size: 45px;
+    font-weight: 100;
+    margin: 0px 0px 10px 0px;
+}
+
+.more-action {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 20px 40px;
+    margin: 0px 40px;
+    max-width: 250px;
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#notifications {
+    margin: 20px 0px;
+    max-width: 200px;
+}
+
+#notifications li {
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: top;
+    list-style-type: none;
+    margin: 30px 0px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    color: #808080;
+}
+
+
+.more-action:hover {
+    background-color: rgba(255,255,255,0.8);
+    color: #f15a24;
+}
+
+#dan {
+    background-image: url('../img/dan.jpg');
+    background-position: center;
+}
+
+#wiss {
+    background-image: url('../img/wiss.png');
+    background-position: center;
+}
+
+#inspiration {
+    background-image: url('../img/about.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1600px;
+    height: 600px;
+    margin-bottom: 50px;
+}
+
+.about-founders .subtitle {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+.about-founders {
+    width: 90%;
+    margin: 20px auto 0px auto;
+    padding: 0;
+}
+
+.about-founders li {
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    vertical-align: top;
+    color: #808080;
+    width: 45%;
+    margin: 0px 20px 20px 20px;
+}
+
+.img-circular {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    display: inline-block;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border: 2px solid #ffffff;
+    margin-right: 20px;
+}
+
+.img-box#blue {
+    background-color: #5884FF;
+}
+
+.email#green a {
+    background-color: #48B21C;
+}
+
+.img-box#yellow {
+    background-color: #FA990B;
+}
+
+.email#pink a {
+    background-color: #CC007F;
+}
+
+.email a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    float: right;
+    padding: 0;
+    margin: -25px 30px 0px 0px;
+    box-shadow: 0px 0px 5px #000;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.email span {
+    margin: -4px 0px 0px 2px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 40px;
+    vertical-align: top;
+    padding: 0;
+    display: block;
+}
+
+.img-tag {
+    display: inline-block;
+    width: 230px;
+    color: #fff;
+    vertical-align: top;
+}
+
+.img-tag span {
+    font-weight: 100;
+    color: #fff;
+    font-size: 22px;
+}
+.img-box {
+    color: #fff;
+    padding: 20px;
+}
+
+.description {
+    margin: 20px;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.description h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0px 10px 0px;
+}
+
+#how-work {
+    max-width: 800px;
+    margin: 0px auto 40px auto;
+    color: #808080;
+}
+
+
+#how-work p {
+    margin: 5px 0px 0px 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #808080;
+}
+
+#how-work .left {
+    width: 200px;
+    float: left;
+    font-weight: 400;
+}
+
+#how-work .right {
+    float: right;
+    width: 200px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#how-work .center {
+    width: 200px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+
+.collapse {
+    display: none;
+}
+.collapse.in {
+    display: block;
+}
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height .35s ease;
+    transition: height .35s ease;
+}

@@ -6,21 +6,166 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+@media only screen and (max-width : 979px) {
+
+    .copy-container {
+        position: absolute;
+        top: 50%;
+        left: -15%;
+        width: 395px;
+        z-index: 1;
+    }
+
+    img.blur {
+        display:block;
+        -webkit-filter: blur(10px);
+        -moz-filter: blur(10px);
+        -o-filter: blur(10px);
+        -ms-filter: blur(10px);
+        filter: blur(10px);
+        opacity: 0.95;
+    }
+
+    .copy-container#aboutone {
+        top: 15%;
+        max-width: 300px;
+        font-size: 12px;
+    }
+
+    .copy-container#abouttwo {
+        top: 15%;
+        max-width: 300px;
+        font-size: 12px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    #about-team {
+        display: none;
+    }
+
+    .about-founders {
+        width: 90%;
+        margin: 70px auto 0px auto;
+        padding: 0;
+    }
+
+    .about-founders li {
+        display: inline-block;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        vertical-align: top;
+        color: #808080;
+        width: 45%;
+        margin: 0px 20px 20px 20px;
+    }
+
+    .img-circular {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        display: inline-block;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border: 2px solid #ffffff;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width : 980px) {
+
+    .copy-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -192px;
+        margin-left: 40px;
+        width: 395px;
+        z-index: 1;
+    }
+
+    section h2 {
+        font-size: 36px;
+    }
+
+    #about-team {
+        margin: 100px auto 0px auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    .about-founders {
+        width: 90%;
+        margin: 20px auto 0px auto;
+        padding: 0;
+    }
+
+    .about-founders li {
+        display: inline-block;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        vertical-align: top;
+        color: #808080;
+        width: 45%;
+        margin: 0px 20px 20px 20px;
+    }
+
+    .img-circular {
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+        display: inline-block;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border: 2px solid #ffffff;
+        margin-right: 20px;
+    }
+
+}
+
+
+.entry-header .inner {
+    text-align: left;
+    margin: 0 auto 10px auto;
+}
+
+.entry-header img {
+    margin-left: 20px;
+}
+
+.entry-header {
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px #808080 solid;
+}
+
+.topnav {
+    border-radius: 18px;
+    margin: 10px 6px 0px 6px;
+    /* border: 1px solid #f15a24; */
+    padding: 6px 14px;
+    font-weight: 100;
+    color: #f15a24;
+    text-decoration: none;
+    float: right;
+}
+
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
 /* Overlays */
 
-#blur {
-    display:block;
-    -webkit-filter: blur(20px);
-    -moz-filter: blur(15px);
-    -o-filter: blur(15px);
-    -ms-filter: blur(15px);
-    filter: blur(15px);
-    opacity: 0.95;
-}
+
 
 input:focus {
     outline: none;
@@ -132,16 +277,7 @@ textarea {
     color: #222;
 }
 
-.topnav {
-    border-radius: 18px;
-    margin: 10px 6px 0px 6px;
-    /* border: 1px solid #f15a24; */
-    padding: 6px 14px;
-    font-weight: 100;
-    color: #f15a24;
-    text-decoration: none;
-    float: right;
-}
+
 
 #signup {
     width: 100%;
@@ -247,36 +383,12 @@ h2 {
     padding-left: 80px;
 }
 
-.entry-header .inner {
-    text-align: left;
-    margin: 0 auto 10px auto;
-    width: 800px;
-}
 
-.entry-header {
-    padding-top: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    border-bottom: 1px #808080 solid;
-}
 
-.img-circular {
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-    display: inline-block;
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border: 2px solid #ffffff;
-    margin-right: 20px;
-}
+
 
 #dan {
-    background-image: url('../img/dan.jpg');
+    background-image: ('../img/dan.jpg')url;
     background-position: center;
 }
 
@@ -479,7 +591,6 @@ section {
 }
 
 section h2 {
-    font-size: 36px;
     font-weight: 300;
     color: #000000;
     margin: 0;
@@ -507,15 +618,7 @@ section p {
     border-bottom: 1px #707070 solid;
 }
 
-.copy-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -192px;
-    margin-left: 40px;
-    width: 395px;
-    z-index: 1;
-}
+
 
 
 .about-copy-container {
@@ -543,7 +646,6 @@ section p {
 
 .copy-container#aboutone {
     background-color: rgba(255, 255, 255, 0.6);
-    font-size: 16px;
     color: #000;
 }
 
@@ -680,7 +782,8 @@ section p {
 
 #howwork-list {
     font-size: 13px;
-    width: 80%;
+    width: 90%;
+    padding: 0;
     text-transform: uppercase;
     color: #a6a8ab;
 }
@@ -729,7 +832,6 @@ section p {
 .copy-container#abouttwo {
     background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
-    font-size: 16px;
     font-weight: 100;
 }
 
@@ -745,11 +847,7 @@ section p {
     margin-bottom: 0px;
 }
 
-#about-team {
-    margin: 100px auto 0px auto;
-    width: 80%;
-    text-align: center;
-}
+
 
 #about-team  h2 {
     color: #c6c6c6;
@@ -782,21 +880,7 @@ section p {
     background-color: #f1f1f1;
 }
 
-.about-founders {
-    width: 90%;
-    margin: 20px auto 0px auto;
-    padding: 0;
-}
 
-.about-founders li {
-    display: inline-block;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    vertical-align: top;
-    color: #808080;
-    width: 45%;
-    margin: 0px 20px 20px 20px;
-}
 
 .img-tag span {
     font-weight: 100;
