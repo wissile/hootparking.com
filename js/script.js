@@ -58,7 +58,7 @@ $(function() {
 $(document).ready(function(){
     var scroll_pos = 0;
 
-    if(($(window).width()+15)<600) {
+    if(($(window).width()+15)<735) {
         var tabs = $('.footer').position();
 
         $(window).scroll(function () {

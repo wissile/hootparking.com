@@ -26,7 +26,6 @@ body {
 
 .orange {
 background-color: #f7931e;/*3e4760*/
-    padding: 1px 50px;
     margin: 0;
     clear: both;
 }
@@ -45,10 +44,16 @@ background-color: #f7931e;/*3e4760*/
 
 .white {
 background-color: #fff;
-    margin: 0px 0px;
-    padding: 100px 50px;
+    margin: 0;
     border-bottom: 1px solid #eee;
     clear: both;
+}
+
+.grad {
+    background: -webkit-linear-gradient(rgba(0,0,255,0.2),#f47b50); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,255,0.2),#f47b50); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,255,0.2),#f47b50); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,255,0.2),#f47b50); /* Standard syntax */
 }
 
 .footer {
@@ -76,7 +81,7 @@ background-color: #fff;
 
 #inspiration-text {
     max-width: 350px;
-    margin: 140px 0px 0px 60px;
+    /*margin: 140px 0px 0px 60px;*/
     padding: 40px;
     background-color: rgba(255,255,255,1);
     font-size: 14px;
@@ -124,7 +129,9 @@ display: inline-block;
     max-width: 900px;
     margin: 0 auto;
     padding: 0;
+    clear: both;
 }
+
 
 .features.rediscover {
     text-align: center;
@@ -132,14 +139,14 @@ display: inline-block;
 
 .features > li {
     display: inline-block;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 8px 0px 8px;
 }
 
 .feature-list.left {
     text-align: right;
 }
 
-@media (min-width: 600px ){
+@media (min-width: 735px ){
     .features {
         white-space: nowrap;
     }
@@ -148,6 +155,7 @@ display: inline-block;
     }
     .text {
         text-align: left;
+        max-width: 50%;
     }
 
     #leftfeat {
@@ -155,11 +163,37 @@ display: inline-block;
     }
 
     .about-founders li {
-        width: 45%;
+        width: 43%;
+        margin: 0px 10px 20px 10px;
     }
+    #fname {
+        width: 48.5%;
+        display: inline-block;
+    }
+
+    #lname {
+        width: 48.5%;
+        display: inline-block;
+    }
+    .orange {
+        padding: 1px 50px;
+    }
+    .white {
+        padding: 100px 50px;
+    }
+
+    .res3 img {
+        margin: 0 auto;
+        width: 250px;
+    }
+    .feature-list {
+        max-width: 26%;
+    }
+
 }
 
-@media (max-width: 599px ){
+
+@media (max-width: 734px ){
     .feature-list ul {
         text-align: center;
     }
@@ -178,13 +212,51 @@ display: inline-block;
         width: 100%;
     }
     .about-founders li {
+        width: 90%;
+        margin: 0px auto 20px auto;
+        text-align: left;
+    }
+
+    .res img, .res3 img {
+        margin: 0 auto;
+        width: 60%;
+        max-width: 400px;
+    }
+
+    .res2 img {
+        margin: 0 auto;
+        width: 45%;
+        max-width: 400px;
+    }
+
+
+    #signupform {
+        margin: 0 auto;
+    }
+
+    #fname {
         width: 100%;
+        display: block;
+        margin: 20px 0px 10px 0px;
+    }
+
+    #lname {
+        width: 100%;
+        display: block;
+    }
+    .orange {
+        padding: 1px 5px;
+    }
+    .white {
+        padding: 40px 5px;
+    }
+    .feature-list {
+        max-width: 80%;
     }
 
 }
 
 .feature-list {
-    max-width: 230px;
     padding: 0;
     margin: 0;
     display: inline-block;
@@ -258,7 +330,6 @@ display: inline-block;
 }
 
 .text {
-    max-width: 400px;
     font-size: 30px;
     vertical-align: top;
     white-space: normal;
@@ -283,17 +354,7 @@ input:focus {
 }
 
 #signupform {
-    width: 300px;
-}
-
-#fname {
-    width: 48.5%;
-    display: inline-block;
-}
-
-#lname {
-    width: 48.5%;
-    display: inline-block;
+    max-width: 300px;
 }
 
 .signupfield {
@@ -418,18 +479,18 @@ input:focus {
 }
 
 .about-founders {
-    width: 90%;
+    text-align: center;
     margin: 20px auto 0px auto;
     padding: 0;
 }
 
 .about-founders li {
     display: inline-block;
+    text-align: left;
     border: 1px solid #ccc;
     background-color: #fff;
     vertical-align: top;
     color: #808080;
-    margin: 0px 20px 20px 20px;
 }
 
 .img-circular {
@@ -558,4 +619,27 @@ input:focus {
     overflow: hidden;
     -webkit-transition: height .35s ease;
     transition: height .35s ease;
+}
+
+
+#curve{
+    margin:0 auto;
+    position:relative;
+    width:200px;
+    height:200px;
+    border-bottom-left-radius:200px;
+    background-color: red;
+    float:left;
+
+}
+
+#curve:after{
+    content:"";
+    position:absolute;
+    width:198px;
+    height:198px;
+    border-bottom-left-radius:196px;
+    background-color: #ffffff;
+    left:3px;
+    bottom:3px;
 }
