@@ -1,164 +1,229 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>hoot Parking</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <title>HootParking</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<section class="orange">
+<ul class="features">
+    <div id="logo" class="wow fadeInDown">
+        <img src="img/logoicon2.png" width="70" /><span>hoot<strong>Parking</strong></span>
+    </div>
+    <li id="leftfeat">
+        <img class="wow bounceInRight" id="img1" src="img/androidphone.png" width="300"/>
+    </li>
+<li class="text wow fadeInDown">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+<h2>Parking you'll love</h2>
+<div id="white-text">Search your destination, and let hootParking take care of the rest.</div>
+    <div id="signupscroll">
+        <div class="account" id="create-user"><a href="">Sign up</a></div>
+            <form id="signupform">
+            <input type="text" name="lname" class="signupfield" id="fname" placeholder="First Name">
+            <input type="text" name="fname" class="signupfield" id="lname" placeholder="Last Name">
+            <input type="text" name="email" class="signupfield" id="email" placeholder="Email">
+            <input type="password" name="password" class="signupfield" id="password" placeholder="Password">
+                <input type="submit" name="submit" id="signupbutton" value="Create account">
+            </form>
+    </div>
 
+    <div class="appstore">
+    <a href=""><img src="img/android.png" width="140" height="45"/></a>
+    <a href=""><img src="img/apple.png" width="140" height="45"/></a>
+    </div>
+</li>
 
-        <link rel="stylesheet" href="css/jquery-ui.css">
-        <link href='js/onepagescroll/onepage-scroll.css' rel='stylesheet' type='text/css'>
-        
-    </head>
-    <!--class="loading" removed for faster loading-->
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-       	
-       	<header class="entry-header">
-        	<div class="inner">
-				<nav class="back-link">
-					<a href="index.html"><img src="img/logo2.png" width="80"/></a>
-					<!--<a href="need-help.html" class="topnav">Need Help</a>-->
-					<a href="about.html" class="topnav">About</a>
-					<!--<a href="search-parking.html" class="topnav">Search Parking</a>-->
-				</nav><!-- .nav-single -->
-			</div>
-		</header>
-       	
-       	<div class="main">
-       	 
-	        <section id="fadeInAnim">
-	        	<div class="section-content blur">
-		    		<div class="copy-container">
-			    		<h2>Parking you’ll love</h2>
-			    		<p>Search your destination, and you can finally enjoy what the city has to offer</p>
+</ul>
+</section>
 
-						<ul id="signup">
-							<li id="create-user">Sign up</li>
-							<li class=""><a href=""><img src="img/facebook.jpg" width="150" height="38"/></a></li>
-						</ul>
-						<ul id="appbadges">
+<section class="white">
+    <ul class="features rediscover">
+        <li class="wow fadeInUp">
+            <img src="img/findcar2.png" width="200"/>
+        </li>
+        <li class="text down wow fadeInDown">
+            <h2>Rediscover parking</h2>
+            Simply designed to provide you necessary informations at the right time in the right context
+            <ul id="notifications">
+                <li><img src="img/notification.png"  width="30" alt="" /> Instant notifications</li>
+                <li><img src="img/reminder.png" width="30" alt="" /> Parking reminder</li>
+                <li><img src="img/localisation.png" width="30" alt="" /> Location based</li>
+                <li><img src="img/tracking.png" width="30" alt="" /> Time tracking</li>
+            </ul>
+        </li>
+    </ul>
+</section>
 
-							<li><a href="">
-							  <img alt="Get it on Google Play" src="img/android.png" /></a></li>
-							<li><a href="">
-							  <img alt="Download on Apple Store" src="img/apple.png" /></a></li>
-						</ul>
+<section class="white">
+    <div class="title">
+        <h2>Be proactive</h2>
+        Your time is precious, don't miss any meeting or loose time on your family week end just trying to park your car.
 
+    </div>
+    <ul class="features">
+        <li class="feature-list left">
+            <ul>
+                <li class="wow fadeInLeft"><img src="img/time.png"  width="80" alt="" />
+                    <h6>Save time</h6>
+                    Hootparking will help you park your car faster and closer
+                </li>
+                <li class="wow fadeInLeft" data-wow-delay="2s"><img src="img/sun.png"  width="80" alt="" />
+                    <h6>Stay healthy</h6>
+                    Reduce sitting time in car to be more active out in the sunlight
+                </li>
+            </ul>
+        </li>
+        <li>
+            <img src="img/windows.png" width="300"/>
+        </li>
+        <li class="feature-list">
+            <ul>
+                <li class="wow fadeInRight" data-wow-delay="1.5s"><img src="img/recycle.png"  width="80" alt="" />
+                    <h6>Reduce pollution</h6>
+                        Save on gas and help reduce pollution in our environment
+                </li>
+                <li class="wow fadeInRight" data-wow-delay="0.5s"><img src="img/dollars.png"  width="80" alt="" />
+                    <h6>Save money</h6>
+                        Save on parking fees and avoid getting tickets
+                </li>
+            </ul>
+        </li>
+    </ul><!--features-->
+</section>
 
-                        <div id="dialog-form" title="Create New Account">
-                            <!--<img src="img/hootaccount.png" alt="" height="80" width="80"/>-->
-                            <form>
-                                <fieldset>
-                                    <input type="text" name="name" id="fname" placeholder="First Name" class="account-field">
-                                    <input type="text" name="name" id="lname" placeholder="Last Name" class="account-field">
-                                    <input type="text" name="email" id="email" placeholder="Email" class="account-field">
-                                    <input type="password" name="password" id="password" placeholder="Password" class="account-field">
-                                    <!-- Allow form submission with keyboard without duplicating the dialog button -->
-                                    <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
-                                </fieldset>
-                            </form>
-                        </div>
-
-		    		</div>
-		    		<img class="blur" src="img/hootdesign.jpg"  width="100%" alt="iPhone" />
-	        	</div>
-		    </section>
-
-		    <section id="revealAnim">
-		    	<div class="section-content">
-                    <div class="images-container" id="right">
-                        <img class="front" src="img/watch.jpg" height="48%" alt="iPhone" />
-                        <img class="back" src="img/findcar2.png" height="95%" alt="iPhone" />
-                    </div>
-		    		<div class="copy-container" id="left">
-                        <ul id="background-list">
-                            <li><img src="img/time2.png" alt="" /></li>
-                            <li><img src="img/recycle2.png" alt="" /></li>
-                            <li><img src="img/sun2.png" alt="" /></li>
-                        </ul>
-			    		<h2 id="orange">Because we care</h2>
-			    		<p>Simply designed to provide you all the necessary information in the right context
-                        at the right time</p>
-						 <ul id="features-list">
-                            <li><img src="img/notification.png" alt="" /> Instant notifications</li>
-                            <li><img src="img/reminder.png" alt="" /> Parking reminder</li>
-                            <li><img src="img/localisation.png" alt="" /> Location based</li>
-                            <li><img src="img/tracking.png" alt="" /> Time tracking</li>
-                      </ul>
-		    		</div>
-	        	</div>
-		    </section>
-		    <section id="betweenSlidesAnimStart">
-		    	<div class="section-content">
-		    		<div id="center">
-			    		<h2>Finally take action</h2>
-			    		<p>We create crowed sourced parking to help organize that parking space repartition and reduce pollution
-                            in our environment. Users will now have stress free driving experience</p>
-		    		</div>
-                    <ul id="benefit-list">
-                        <li><img src="img/time.png" alt="" /><p>Save time</p></li>
-                        <li><img src="img/sun.png" alt="" /><p>Stay healthy</p></li>
-                        <li><img src="img/recycle.png" alt="" /><p>Reduce pollution</p></li>
-                        <li><img src="img/dollars.png" alt="" /><p>Save money</p></li>
-                    </ul>
-
-	        	</div>
-		    </section>
-		    <section id="betweenSlidesAnimEnd">
-		    	<div class="fake-content">
-		    		<div class="images-container">
-		    			<img class="green" src="img/parkinginfo.png" height="80%" alt="iPhone" />
-		    		</div>
-	        	</div>
-		    	<div class="section-content">
-		    		<div class="copy-container">
-			    		<h2>Everybody gets a chance</h2>
-			    		<p>No hard feelings, whichever device you use is supported</p>
-                        <ul id="platform-list">
-                            <li><img src="img/apple-logo.png" alt="" /><p>iOS</p></li>
-                            <li><img src="img/android-logo.png" alt="" /><p>Android</p></li>
-                            <li><img src="img/windows-logo.png" alt="" /><p>Windows</p></li>
-                        </ul>
-		    		</div>
-		    		<div class="images-container">
-                        <!--put 3 phones images + logo apple - android - window-->
-
-		    			<img src="img/androidphone.png" height="80%" alt="iPhone" />
-                        <img class="front2" src="img/windows.png" height="80%" alt="iPhone" />
-		    		</div>
-	        	</div>
-		    </section>
-
-		</div>
+<section class="white">
+    <div class="title">
+        <h2>Everybody gets a chance</h2>
+        No hard feelings, whichever device you use is supported
+    </div>
+    <ul id="platforms">
+    <li><img class="wow flip" src="img/apple-logo.png" width="60" alt="" /><p>iOS</p></li>
+    <li><img class="wow flip" data-wow-delay="0.5s" src="img/android-logo.png" width="60" alt="" /><p>Android</p></li>
+    <li><img class="wow flip" data-wow-delay="1s" src="img/windows-logo.png" width="60" alt="" /><p>Windows</p></li>
+    </ul>
+</section>
 
 
+<section>
+    <div id="accordion"><!--Javascript annimation container NAME AND EMPLACEMENT REQUIRED BY BOOTSTRAP (DO NOT REMOVE)-->
+        <div class="panel"><!--Javascript annimation boxes container NAME AND EMPLACEMENT REQUIRED BY BOOTSTRAP (DO NOT REMOVE)-->
 
-        <script src="js/vendor/jquery-1.9.1.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/vendor/jquery-ui.js"></script>
-		<script src="js/onepagescroll/jquery.onepage-scroll.js"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/script.js"></script>
+<div class="footer">
+    <div class="more-action" data-toggle="collapse" data-parent="#accordion" data-target="#meetus">Meet team</div>
+    <div class="more-action" data-toggle="collapse" data-parent="#accordion" data-target="#learnmore">Learn more</div>
+</div>
+
+            <div id="learnmore" class="collapse drop-content">
+<div id="inspiration">
+    <div class="title">
+        <h2>The inspiration</h2>
+        Hootparking is about contributing to help organize the city parking.
+    </div>
+    <div id="inspiration-text">
+        Bringing the community together,
+        helping transform the frustration of parking to an enjoyable experience leaving them the chance the
+        fully appreciate the city life.
+        <h6 id="blue">Focus on the most important</h6>
+        From a local resident going to work, attending a meeting, rushing to
+        conference or a new tourist hoping drive around, they can now focus on their destination.
+        <h6 id="pink">Save on the rest</h6>
+        Spending less time looking for parking will allow users to save on gas, time, and be able to find the
+        cheapest parking available nearby.
+        <h6 id="green">Protect our environment</h6>
+        Let's be green, taking a step toward reducing gas pollution in big
+        cities.
+    </div>
+</div>
+    <div id="how-work">
+        <div class="title">
+            <h2>How it works?</h2>
+            Simplicity and beautiful design is our main focus to facilitate
+            parking and make it an enjoyable experience.
+        </div>
+        <div class="left wow fadeInLeft" data-wow-delay="0.5s"><div class="point"></div>Search destination
+        <p>Quickly find the closest parking to you destination</p></div>
+        <div class="right wow fadeInRight" data-wow-delay="1.5s"><div class="point"></div>Tack time & spending
+        <p>Hootparking will track you time, spending and notify you when to move</p></div>
+        <img class="wow rubberBand" data-wow-delay="1s" src="img/hotwork.png"  width="800" alt=""/>
+        <div class="center wow fadeInUp" data-wow-delay="1s"><div class="point"></div>Park your car
+        <p>Stress free hootparking will prevent you to get tickets or your car towed</p></div>
+    </div>
+            </div><!--learn more-->
+
+            <div id="meetus" class="collapse drop-content">
+    <div class="title wow fadeInDown">
+        <h2>Meet us</h2>
+        We work hard to deliver you the best service, feel free to drop us a line on how we can improve the
+        app or share your appreciation.
+    </div>
+    <ul class="about-founders">
+        <li class="wow fadeInUp">
+            <div class="img-box" id="blue">
+                <div class="img-circular" id="dan"></div>
+                <div class="img-tag">
+                    <span>Daniels Newball</span>
+
+                    <p class="subtitle">Back-end, server, database</p>
+                </div>
+            </div>
+            <!--END img-box-->
+            <div class="email" id="green"><a href="mailto:dnewball@hootparking.com"><span>+</span></a></div>
+            <div class="description">
+                <h5>How I work?</h5>
+                Hello here is my biography, and there might be good stuff to tell
+                arum palad there is sime salad to sya shima about thatHello here is my biography, and there
+                might be good stuff to tell
+                arum palad there is sime salad to sya shima about that
+            </div>
+        </li>
+
+
+        <li class="wow fadeInUp">
+            <div class="img-box" id="yellow">
+                <div class="img-circular" id="wiss"></div>
+                <div class="img-tag">
+                    <span>Wissile Sogoyou</span>
+
+                    <p class="subtitle">Designer, UX/UI</p>
+                </div>
+            </div>
+            <!--END img-box-->
+            <div class="email" id="pink"><a href="mailto:wissile@hootparking.com"><span>+</span></a></div>
+            <div class="description">
+                <h5>How I got inspired?</h5>
+                Hello here is my biography, and there might be good stuff to tell
+                arum palad there is sime salad to sya shima about thatHello here is my biography, and there
+                might be good stuff to tell
+                arum palad there is sime salad to sya shima about that
+            </div>
+        </li>
+
+    </ul>
+
+    </div><!--meet us-->
+
+
+            </div><!--panel-->
+        </div><!--Accordion-->
+
+</section>
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/wow/1.0.2/wow.min.js"></script>
+<script src="js/script.js"></script>
 
 
 
-        <script>
 
 
-        </script>
-        
-    </body>
+</body>
 </html>

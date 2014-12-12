@@ -1,6 +1,117 @@
 /**
  * Created by wissile on 11/5/14.
  */
+
+//init of wow.js
+new WOW().init();
+
+
+// collapse when click on signup button
+$(function() {
+    $( "#signupscroll" ).accordion({
+        active: false,
+        collapsible: true
+    });
+});
+
+
+
+
+
+
+
+// Ajax signup
+
+//
+//            var fname = $( "#fname" ),
+//                     lname = $( "#lname" ),
+//            email = $( "#email" ),
+//            password = $( "#password" );
+//
+//
+//    var usrInfo = JSON.stringify({
+//        firstName: fname.val(),
+//        lastName: lname.val(),
+//        password: password.val(),
+//        email: email.val()
+//    });
+//
+//    sendUser(usrInfo);
+//
+//    function sendUser(usrInfo) {
+//        var user = usrInfo;
+//        var urlAjax =  "http://easyparkapp.herokuapp.com/api/users";
+//
+//        $.ajax({
+//            type: "POST",
+//            url: urlAjax,
+//            contentType: "application/json",
+//            data: user,
+//            success: function(data) { alert("ajax worked"); },
+//            error: function(data) {alert("ajax error"); },
+//            dataType: 'json'
+//        });
+//    }
+
+
+// Auto scroll when click on footer
+$(document).ready(function(){
+    var scroll_pos = 0;
+
+    if(($(window).width()+15)<600) {
+        var tabs = $('.footer').position();
+
+        $(window).scroll(function () {
+            scroll_pos = $(this).scrollTop();
+
+            if ((scroll_pos + 54) >= tabs.top) {
+                $('.footer').addClass('stick');
+            } else {
+                $('.footer').removeClass('stick');
+            }
+        });
+
+        //page nav
+        $(".more-action").click(function () {
+            $('body').animate({
+                scrollTop: 5550
+            }, 'slow');
+        });
+    } else {
+        var tabs = $('.footer').position();
+
+        $(window).scroll(function () {
+            scroll_pos = $(this).scrollTop();
+
+            if ((scroll_pos + 54) >= tabs.top) {
+                $('.footer').addClass('stick');
+            } else {
+                $('.footer').removeClass('stick');
+            }
+        });
+
+        //page nav
+        $(".more-action").click(function () {
+            $('body').animate({
+                scrollTop: 3050
+            }, 'slow');
+        });
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $(function() {
     var dialog, form,
 
