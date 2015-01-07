@@ -103,18 +103,17 @@ background-color: #fff;
 }
 
 #logo {
-    margin: 50px 0px;
+    margin: 50px auto;
+    text-align: center;
 }
 
 #logo img {
-display: inline-block;
-
+    display: inline-block;
     vertical-align: middle;
     margin-right: 15px;
 }
 
 #logo span {
-    color#f15a24;
     display: inline-block;
     vertical-align: middle;
     font-size: 38px;
@@ -130,6 +129,7 @@ display: inline-block;
     margin: 0 auto;
     padding: 0;
     clear: both;
+    text-align: center;
 }
 
 
@@ -263,6 +263,7 @@ display: inline-block;
     vertical-align: top;
     font-size: 16px;
     font-weight: 400;
+    text-align: left;
 }
 
 .feature-list ul {
@@ -337,6 +338,7 @@ display: inline-block;
 
 .text.down {
     margin-top: 90px;
+    float: right;
 }
 
 .text #white-text {
@@ -431,6 +433,10 @@ input:focus {
 
 #notifications {
     max-width: 200px;
+}
+
+#notifications img {
+    margin-right: 10px;
 }
 
 #notifications li {
